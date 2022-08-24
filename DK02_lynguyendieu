@@ -1,19 +1,24 @@
 using System;
-namespace TimSoLonNhat
+namespace BaiTapCSharp
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int a, b;
-            Console.Write("");
+            int a, b, c;
+            Console.Write("\n Nhap vao so thu nhat: ");
             a = Convert.ToInt32(Console.ReadLine());
-            Console.Write("");
+            Console.Write("\n Nhap vao so thu hai: ");
             b = Convert.ToInt32(Console.ReadLine());
-            if (a >b)
+            Console.Write("\n Nhap vao so ket thuc: ");
+            c = Convert.ToInt32(Console.ReadLine());
+            if (a >= b && a >= c)
                 Console.WriteLine("\n {0} la so lon nhat.", a);
-            else if(b >a)
+            else if(b >= a && b >= c)
                 Console.WriteLine("\n {0} la so lon nhat.", b);
+            else
+            //và trường hợp cuối cùng c là số lớn nhất
+                Console.WriteLine("\n {0} la so lon nhat.", c);
         }
     }
 }
