@@ -1,0 +1,17 @@
+using System;
+ 
+namespace BaiTapLamTron
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double n;
+            Console.Write("\n Nhap vao so thu nhat: ");
+            n = Convert.ToDouble(Console.ReadLine());
+            //hiển thị các số sau khi đã làm tròn
+            Console.WriteLine("\n So {0} sau khi lam tron so thap  phan la: {1}",n , Math.Round(n,0));
+           
+        }
+    }
+}
