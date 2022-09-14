@@ -1,32 +1,25 @@
 using System;
-
-namespace DEMTU
-{
-    class LYDEMTU
-    {
-        static void Main(string[] args)
-        {
-            string str; /* Khai bao mot chuoi */
-            int bien_dem, l;
-            Console.Write("");
-            str = Console.ReadLine();
-            l = 0;
-            bien_dem = 1;
-            /* lap toi phan cuoi cua chuoi */
-            while (l <= str.Length - 1)
-            {
-                /* kiem tra xem ky tu hien tai co phai la khoang trang 
-                 * hay la ky tu new line hay ky tu tab */
-                if (str[l] == ' ' || str[l] == '	')
-                {
-                    bien_dem++;
-                }
-
-                l++;
-            }
-
-            Console.Write( bien_dem); 
-            Console.ReadKey();
-        }
-    }
+class HelloWorld {
+  static void Main() {
+   string s=Console.ReadLine();
+   s=s.Trim();
+   if(String.IsNullOrEmpty(s)){
+       Console.WriteLine("0");
+   }
+   else{
+       
+   }
+   int i=0;
+   while(i<s.Length){
+       if((s[i]==' ')&&(s[i+1]==' ')){
+           s=s.Remove(i,1);
+           i--;
+       }
+       i++;
+   }
+    var s1=s.Split(' ');
+   int count=s1.Length;
+   Console.WriteLine("{0}", count);
+   Console.ReadLine();
+  }
 }
