@@ -1,5 +1,5 @@
 using System;
-class HelloWorld {
+class nguyendieuly {
   static void Main() {
    int t=Convert.ToInt32(Console.ReadLine());
    int t1=t;
@@ -14,12 +14,12 @@ class HelloWorld {
    }
   }
   static double s(int n){
-      double tong=0;
+      double sum=0;
       int x=0;
       for(int i=1; i<=n; i++){
           x=x+i;
-          tong=tong + 1.0/x;
+          sum=sum + 1.0/x;
       }
-      return tong;
+      return sum;
   }
 }
